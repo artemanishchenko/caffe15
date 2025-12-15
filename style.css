@@ -1,0 +1,435 @@
+/* ===== ОБЩИЕ СТИЛИ ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== НАВИГАЦИЯ И ХЕДЕР С ФОНОМ ===== */
+/* Добавили общий фон для хедера и hero-section */
+.header-with-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.navbar {
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+/* Добавили стили для SVG логотипа */
+.logo-svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Убрали стили для SVG логотипа, вернули старый */
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px 12px;
+}
+
+.logo-number {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 0.9rem;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  color: #ddd !important;
+}
+
+/* Стили для иконок поиска и корзины */
+.btn-link {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.btn-link:hover {
+  color: #ddd;
+}
+
+.btn-link svg {
+  vertical-align: middle;
+}
+
+/* ===== ГЛАВНЫЙ БАННЕР ===== */
+/* Убрали дублирующий фон, так как теперь фон на header-with-hero */
+.hero-section {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-overlay {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.btn-outline-light {
+  border: 2px solid #fff;
+  padding: 10px 35px;
+  font-size: 1rem;
+}
+
+/* ===== ЗАГОЛОВКИ СЕКЦИЙ ===== */
+.section-title-script {
+  font-size: 2.5rem;
+  color: #8b4789;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ===== СЕКЦИЯ "О КАФЕ" ===== */
+.about-cafe {
+  background-color: #fff;
+}
+
+/* Упростили стили для одной картинки */
+.about-cafe img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ===== СЕКЦИЯ "АТМОСФЕРА" ===== */
+.atmosphere-section {
+  background-color: #ffffff;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ===== СЕКЦИЯ "ПРЕИМУЩЕСТВА" ===== */
+.advantages-section {
+  background-color: #fff;
+}
+
+.advantage-card {
+  padding: 25px 15px;
+}
+
+.advantage-icon {
+  font-size: 2.5rem;
+}
+
+.advantage-title {
+  font-size: 1.8rem;
+  color: #8b4789;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.advantage-subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* ===== СЕКЦИЯ "АКЦИЯ" ===== */
+.discount-section {
+  background:  url("4ff.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.discount-overlay {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.discount-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px 50px;
+  display: inline-block;
+}
+
+.discount-title {
+  font-size: 2.5rem;
+  color: #8b4789;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.discount-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* ===== СЕКЦИЯ "МЕРОПРИЯТИЯ" ===== */
+/* Изменили фон на белый для устранения серого пробела */
+.events-section {
+  background-color: #fff;
+}
+
+.events-section img {
+  border-radius: 8px;
+}
+
+.btn-outline-dark {
+  border: 2px solid #333;
+  padding: 8px 25px;
+}
+
+/* ===== СЕКЦИЯ "КОНТАКТЫ" ===== */
+/* Убрали отступы для устранения белого пробела */
+.contacts-section {
+  background-color: #fff;
+  padding: 0;
+}
+
+.map-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("sixth.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.contact-card h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.contact-card h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* ===== ФУТЕР ===== */
+/* Обновили стили футера для точного соответствия макету */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 3rem 0 2rem;
+}
+
+.footer-top {
+  /* Увеличили отступ снизу для большего расстояния до разделителя */
+  padding-bottom: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo-footer {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px 12px;
+  display: inline-block;
+}
+
+/* Горизонтальная линия разделитель */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 1.5rem 0;
+  opacity: 1;
+}
+
+.footer-bottom {
+  padding-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* ===== АДАПТИВНОСТЬ ДЛЯ ПЛАНШЕТОВ (768px и меньше) ===== */
+/* Используем только max-width для упрощения кода */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title-script {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .discount-title {
+    font-size: 2rem;
+  }
+
+  .discount-card {
+    padding: 25px 40px;
+  }
+
+  .advantage-icon {
+    font-size: 2.2rem;
+  }
+
+  .advantage-title {
+    font-size: 1.6rem;
+  }
+
+  /* Выравниваем ссылки в футере слева на планшетах */
+  .footer-links {
+    align-items: flex-start;
+  }
+}
+
+/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ (480px и меньше) ===== */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 350px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-outline-light {
+    padding: 8px 25px;
+    font-size: 0.95rem;
+  }
+
+  .section-title-script {
+    font-size: 1.7rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .discount-title {
+    font-size: 1.7rem;
+  }
+
+  .discount-subtitle {
+    font-size: 1rem;
+  }
+
+  .discount-card {
+    padding: 20px 30px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .logo-number {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    margin: 5px 0;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .advantage-card {
+    padding: 18px 10px;
+  }
+
+  .advantage-icon {
+    font-size: 2rem;
+  }
+
+  .advantage-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-card h4 {
+    font-size: 1.0rem;
+  }
+
+  .modal-body {
+    padding: 15px 20px 20px;
+  }
+}
